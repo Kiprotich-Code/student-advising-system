@@ -49,7 +49,7 @@
                     <a href="{{admin_notify_staff}}" class="nav-link {% if admin_notify_staff == request.path %} active {% endif %}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Notify Staff
+                            Advise Staff
 
                         </p>
                     </a>
@@ -59,7 +59,7 @@
                     <a href="{{admin_notify_student}}" class="nav-link {% if admin_notify_student == request.path %} active {% endif %}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Notify Student
+                            Advise Student
 
                         </p>
                     </a>
@@ -193,7 +193,7 @@
                 <a href="{{ student_feedback_message }}" class="nav-link  {% if student_feedback_message == request.path %} active {% endif %}">
                     <i class="nav-icon fas fa-th"></i>
                     <p>
-                        Student Feedback
+                        Student Notification
                             
                         </p>
                     </a>
@@ -204,13 +204,13 @@
                     <a href="{{staff_feedback_message}}" class="nav-link   {% if staff_feedback_message == request.path %} active {% endif %}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Staff Feedback
+                            Staff Notification
                             
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                {% url 'view_staff_leave' as view_staff_leave %}
+                <!-- {% url 'view_staff_leave' as view_staff_leave %}
 
                     <a href="{{view_staff_leave}}" class="nav-link  {% if view_staff_leave == request.path %} active {% endif %}">
                         <i class="nav-icon fas fa-th"></i>
@@ -230,7 +230,7 @@
                             
                         </p>
                     </a>
-                </li>
+                </li> -->
                 
 {% elif request.user.user_type == '2' %}
     <!-- Brand Logo -->
@@ -329,7 +329,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     {% url 'staff_apply_leave' as staff_apply_leave %}
                     <a href="{{staff_apply_leave}}" class="nav-link {% if staff_apply_leave == request.path %} active {% endif %}">
                         <i class="nav-icon fas fa-th"></i>
@@ -338,7 +338,7 @@
 
                         </p>
                     </a>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     {% url 'staff_feedback' as staff_feedback %}
